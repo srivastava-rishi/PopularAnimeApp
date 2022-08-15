@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">AnimeFinder</string>
+
+    //
+    <string name="splash_text">SparkCog</string>
+
+    //product item layout
+    <string name="productTitle">Name:</string>
+    <string name="productDescriptionTitle">Description:</string>
+    <string name="categoryTitle">Category:</string>
+    <string name="ratingTitle">Rating:</string>
+
+
+
 </resources>
