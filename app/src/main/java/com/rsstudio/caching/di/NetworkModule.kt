@@ -1,7 +1,7 @@
 package com.rsstudio.caching.di
 
 import com.google.gson.GsonBuilder
-import com.rsstudio.caching.data.network.apis.HomeApiInterface
+import com.rsstudio.caching.data.network.apis.AnimeApiInterface
 import com.rsstudio.caching.util.Constant
 import dagger.Module
 import dagger.Provides
@@ -17,10 +17,10 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideRetrofitService(): HomeApiInterface =
+    fun provideRetrofitService(): AnimeApiInterface =
         Retrofit.Builder()
             .baseUrl(Constant.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .build()
-            .create(HomeApiInterface::class.java)
+            .create(AnimeApiInterface::class.java)
 }
